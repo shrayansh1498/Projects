@@ -7,8 +7,19 @@ public class FactoryDesignPatternBefore {
     public static void main(String[] args)
     {
         System.out.println("Creating Car object");
-        String vehicleType = "Airplane";
-        if (vehicleType.equals("Airplane")) 
+        String vehicleType = "Truck";
+        if (vehicleType.equals("Car")) 
+        {
+            System.out.println("Car");
+        } 
+        else if (vehicleType.equals("Truck")) 
+        {
+            System.out.println("Truck");        } 
+        else if (vehicleType.equals("Bike")) 
+        {
+            System.out.println("Bike");
+        } 
+        else if (vehicleType.equals("Airplane")) 
         {
             System.out.println("Airplane");
         } 
@@ -18,7 +29,7 @@ public class FactoryDesignPatternBefore {
         } 
         else 
         {
-        throw new IllegalArgumentException("vehicle type is not known");
+        throw new IllegalArgumentException("Unknown vehicle type");
         }
     }
 }
