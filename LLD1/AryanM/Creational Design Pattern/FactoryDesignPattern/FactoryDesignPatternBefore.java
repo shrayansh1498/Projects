@@ -19,6 +19,14 @@ public class FactoryDesignPatternBefore {
         {
             System.out.println("Bike");
         } 
+        else if (vehicleType.equals("Airplane")) 
+        {
+            System.out.println("Airplane");
+        } 
+        else if (vehicleType.equals("Boat")) 
+        {
+            System.out.println("Boat");        
+        } 
         else 
         {
         throw new IllegalArgumentException("Unknown vehicle type");
